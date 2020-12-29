@@ -1,0 +1,17 @@
+import org.junit.Test;
+
+public class MainClass
+{
+    @Test
+    public void testGetLocalNumber() {
+        int a = this.getLocalNumber();
+        if (a == 14) {
+            System.out.println("Good, result = 14!");
+        }else{
+            System.out.println("Oops! Result is not 14!");
+        }
+    }
+    public int getLocalNumber() {
+        return 14;
+    }
+}
