@@ -1,0 +1,23 @@
+public class MainClass {
+    private final String class_string = "Hello, world";
+
+    public String getClassString() {
+        return class_string;
+    }
+}
+
+import org.junit.Assert;
+import org.junit.Test;
+public class MainClassTest extends MainClass
+{
+    @Test
+    public void testGetClassString()
+    {
+      boolean result = getClassString().contains("hello") || getClassString().contains("Hello");
+      if (result) {
+    System.out.println("So good! The string has the word 'hello' or 'Hello'");
+}
+
+        Assert.assertTrue("Oops! The string doesn't has the words 'hello' or 'Hello'", result);
+}
+}
