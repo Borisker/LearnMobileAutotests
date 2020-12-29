@@ -1,0 +1,23 @@
+import org.junit.Test;
+public class MainClass
+{
+    private int class_number = 20;
+
+    @Test
+    public void testGetClassNumber() {
+        int a = getClassNumber();
+        if (a>45) {
+            System.out.print("Good, 'class_number' more than 45");
+        } else
+        if (a==0) {
+            System.out.println("Oops! 'class_number' = zero");
+        } else {
+            System.out.print("Test failed: 'class_number' less than 45");
+        }
+    }
+
+    public int getClassNumber() {
+        int class_number = this.class_number;
+        return class_number;
+    }
+}
